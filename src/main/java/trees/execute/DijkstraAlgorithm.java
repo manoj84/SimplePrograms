@@ -81,7 +81,7 @@ public class DijkstraAlgorithm {
 
         }
 
-        System.out.println(g.getNode("E").getAttribute("ui.length"));
+        //System.out.println(g.getNode("E").getAttribute("ui.length"));
 
     }
 }

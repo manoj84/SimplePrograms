@@ -1,6 +1,7 @@
 package trees.execute;
 
 //Refer to wikipedia .. Binary Search
+//https://en.wikipedia.org/wiki/Binary_search_tree
 
 import tree.core.BSTNode;
 
