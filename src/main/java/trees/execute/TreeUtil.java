@@ -1,16 +1,6 @@
 package trees.execute;
 
-/**
- * ==========================================
- * Binary Tree
- * =================================
- * 6 F
- * 4 B          10 G
- * 2 node4      5 node5        12 node6
- * 1 node7     3 node8             11 node9
- * ======================================
- * Check wiki pedia for in order pre order tree traversal for diagram
- */
+//Refer to wikipedia .. Binary Search
 
 import tree.core.BSTNode;
 
@@ -19,10 +9,11 @@ public final class TreeUtil {
     public static BSTNode<Integer, String> getBinarySearchTree() {
 
         BSTNode<Integer, String> F = new BSTNode<Integer, String>();
-        F.setKey(6);
+        F.setKey(8);
         F.setElement("F");
+
         BSTNode<Integer, String> B = new BSTNode<Integer, String>();
-        B.setKey(4);
+        B.setKey(3);
         B.setElement("B");
         F.setLeft(B);
 
@@ -32,35 +23,34 @@ public final class TreeUtil {
         F.setRight(G);
 
         BSTNode<Integer, String> A = new BSTNode<Integer, String>();
-        A.setKey(2);
+        A.setKey(1);
         A.setElement("A");
         B.setLeft(A);
 
         BSTNode<Integer, String> D = new BSTNode<Integer, String>();
-        D.setKey(5);
+        D.setKey(6);
         D.setElement("D");
         B.setRight(D);
 
         BSTNode<Integer, String> C = new BSTNode<Integer, String>();
-        C.setKey(1);
+        C.setKey(4);
         C.setElement("C");
         D.setLeft(C);
 
         BSTNode<Integer, String> E = new BSTNode<Integer, String>();
-        E.setKey(3);
+        E.setKey(7);
         E.setElement("E");
         D.setRight(E);
 
-        BSTNode<Integer, String> I = new BSTNode<Integer, String>();
-        I.setKey(10);
-        I.setElement("I");
-        G.setRight(I);
-
+        BSTNode<Integer, String> X = new BSTNode<Integer, String>();
+        X.setKey(14);
+        X.setElement("X");
+        G.setRight(X);
 
         BSTNode<Integer, String> H = new BSTNode<Integer, String>();
-        H.setKey(11);
+        H.setKey(13);
         H.setElement("H");
-        I.setLeft(H);
+        X.setLeft(H);
 
         return F;
 
